@@ -4,7 +4,7 @@
     Submitted by Devesh Kumar 
 	LinkedIn- linkedin.com/in/devesh-k-110862113/
 	Time complexity - O(n)
-	Space complexity - O(1)
+	Space complexity - O(n)
 
 
 
