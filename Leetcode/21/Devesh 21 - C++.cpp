@@ -4,30 +4,8 @@
     Submitted by Devesh Kumar 
 	LinkedIn- linkedin.com/in/devesh-k-110862113/
 	Time complexity - O(n)
-	Space complexity - O(n)
+	Space complexity - O(1)
 
-
-
-
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode() : val(0), next(nullptr) {}
- *     ListNode(int x) : val(x), next(nullptr) {}
- *     ListNode(int x, ListNode *next) : val(x), next(next) {}
- * };
- */
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode() : val(0), next(nullptr) {}
- *     ListNode(int x) : val(x), next(nullptr) {}
- *     ListNode(int x, ListNode *next) : val(x), next(next) {}
- * };
- */
 struct ListNode{
 	int val;
 	listNode* next=NULL;
