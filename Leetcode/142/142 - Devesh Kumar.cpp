@@ -17,19 +17,15 @@ class Solution {
 public:
     ListNode *detectCycle(ListNode *head) {
         vector<vector<ListNode*>> v(200001);
-        int index=0;
         for(;head!=NULL;head=head->next)
         {
             int num=(head->val<0)?head->val+10000:head->val;
             for(int i=0;i<v[num].size();i++)
             {
-                if(v[num][i]->next==head)
-                    return v[num][i]->next;
+                if(v[num][i]==head)
+                    return v[num][i];
             }
-            ListNode* new_node=new ListNode;
-            new_node->val=index++;
-            new_node->next=head;
-            v[num].push_back(new_node);
+            v[num].push_back(head);
 
         }
         return head;
