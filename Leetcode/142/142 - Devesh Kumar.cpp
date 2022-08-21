@@ -16,17 +16,17 @@
 class Solution {
 public:
     ListNode *detectCycle(ListNode *head) {
-        vector<vector<ListNode*>> v(200001);
+        unordered_set<ListNode*> v;
         for(;head!=NULL;head=head->next)
         {
-            int num=(head->val<0)?head->val+10000:head->val;
-            for(int i=0;i<v[num].size();i++)
+            if(v.find(head)!=v.end())
             {
-                if(v[num][i]==head)
-                    return v[num][i];
-            }
-            v[num].push_back(head);
-
+            	return head;
+			}
+			else
+			{
+				v.insert(head);
+			}
         }
         return head;
     }
