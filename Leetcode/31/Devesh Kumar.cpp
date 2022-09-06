@@ -1,3 +1,13 @@
+/*  
+	Problem no. 31. Next Permutation
+	Problem Link - https://leetcode.com/problems/next-permutation/
+	
+	Submitted by - Devesh Kumar
+	 
+	Time complexity - O(n)
+	Space complexity - O(1)
+*/
+
 #include<bits/stdc++.h>
 using namespace std;
 class Solution {
